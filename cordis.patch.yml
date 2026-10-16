@@ -1,0 +1,7 @@
+# dsh-hello-publisher — bundle patch layer.
+#
+# One loader row, which is what makes this an installable DSH plugin. The id is
+# stable because a published listing points at it.
+- insert:
+    - id: hello-publisher
+      name: dsh-hello-publisher

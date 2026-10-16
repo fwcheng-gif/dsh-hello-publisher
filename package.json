@@ -1,0 +1,42 @@
+{
+  "name": "dsh-hello-publisher",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "A minimal DeepSeek Harness plugin used to exercise dsh-github-publisher end to end: one loader row, one demo tool.",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "exports": {
+    ".": {
+      "default": "./lib/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "compatibility": {
+      "dsh": ">=0.2.0-rc.2 <0.3.0",
+      "profiles": [
+        "web",
+        "desktop"
+      ]
+    }
+  },
+  "engines": {
+    "node": ">=20.18"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "test-fixture"
+  ]
+}
